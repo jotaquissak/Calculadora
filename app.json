@@ -1,15 +1,20 @@
 {
   "expo": {
-    "name": "teste",
-    "slug": "teste",
+    "name": "Calculadora",
+    "slug": "Calculadora",
+    "privacy": "public",
+    "platforms":[
+      "ios",
+      "android"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000",
+      "color": "#fff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,16 +23,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.quissakteam.calculadora"
     },
     "android": {
+      "package": "com.quissakteam.calculadora",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "foregroundImage": "./assets/adaptive-icon.png"
       }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
     }
   }
 }
