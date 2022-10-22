@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
         fontSize: 30,
         height: Dimensions.get('window').width/4,
         width: Dimensions.get('window').width/4,
-        padding: 20,
         backgroundColor: "#343434",
         color: "#fff",
         borderWidth: 10,
@@ -13,13 +12,14 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         textAlign: "center",
         borderRadius: 25,
-        borderColor: "#000"
+        borderColor: "#000",
     }, 
     orangeButton:{
+        backgroundColor: "#F99D08",
         color: "#fff",
         alignItems: "center",
         justifyContent: "center",
-        backgroundColor: "#F99D08",
+        
     },
     doubleButton:{
         width: (Dimensions.get('window').width/4)*2,
@@ -30,11 +30,16 @@ const styles = StyleSheet.create({
         backgroundColor: "#F99D08",
         alignItems: "center",
         justifyContent: "center",
-        color: "#000",
-        paddingTop: 12,
     },
     acButton:{
         color:"#fff"
+    },
+    text: {
+        color: "#fff",
+        textAlign: "center",
+        fontSize: 30,
+        alignItems: "center",
+        justifyContent: "center",
     }
 })
 
