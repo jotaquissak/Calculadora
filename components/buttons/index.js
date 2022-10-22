@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default function Buttons(props){
     const buttonsStyle = [styles.dafaultButton]
+    const textButton = [styles.text]
     if(props.double){
         buttonsStyle.push(styles.doubleButton)
     } 
@@ -24,8 +25,8 @@ export default function Buttons(props){
         )
     }else{
         return(
-            <TouchableOpacity onPress={props.clicked}>
-                <Text style={buttonsStyle}>{props.label}</Text>
+            <TouchableOpacity onPress={props.clicked} style={buttonsStyle}>
+                <Text style={textButton}>{props.label}</Text>
             </TouchableOpacity>
         )
     }
